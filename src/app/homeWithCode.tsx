@@ -32,7 +32,7 @@ export default function HomeWithCode({ initialCode }: HomeWithCodeProps) {
             <>
             
               <div className="bg-gray-50 p-4 rounded-lg mb-6">
-                <p className="font-mono text-sm break-all text-black">{initialCode}</p>
+                <p className="font-mono text-sm break-all text-black dark:text-black">{initialCode}</p>
               </div>
 
               <Link 
