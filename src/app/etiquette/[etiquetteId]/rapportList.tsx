@@ -69,7 +69,7 @@ export default function RapportList({ etiquetteId }: RapportListProps) {
 
   // 🔥 AFFICHAGE DIRECT "AUCUN RAPPORT DISPONIBLE"
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
+    <div className="bg-white rounded-lg shadow-md p-6 h-screen justify-center flex items-center">
       <div className="flex flex-col items-center text-center py-8">
         <svg
           className="w-16 h-16 text-gray-300 mb-4"
