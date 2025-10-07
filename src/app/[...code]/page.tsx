@@ -1,6 +1,6 @@
 // src/app/[...code]/page.tsx
 
-import HomeWithCode from "../homeWithCode"
+import RapportList from "../etiquette/[etiquetteId]/rapportList"
 
 export default async function CodePage({ 
   params 
@@ -10,5 +10,5 @@ export default async function CodePage({
   const { code } = await params
   const etiquetteCode = code.join('/')
   
-  return <HomeWithCode initialCode={etiquetteCode} />
+  return <RapportList etiquetteId={etiquetteCode} />
 }
