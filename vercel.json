@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "src": "/etiquette",
+      "dest": "/index.html",
+      "status": 200
+    },
+    {
+      "src": "/etiquette/(.*)",
+      "dest": "/index.html",
+      "status": 200
+    }
+  ]
+}

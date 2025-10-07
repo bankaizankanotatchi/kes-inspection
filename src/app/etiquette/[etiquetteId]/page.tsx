@@ -1,17 +1,17 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/etiquette/[etiquetteId]/page.tsx
+import RapportList from './rapportList'
 
-import RapportList from "./rapportList"
-
-
+// CORRECTION : Utiliser Promise pour les params dans Next.js 15
 interface PageProps {
-  params: {
+  params: Promise<{
     etiquetteId: string
-  }
+  }>
 }
 
+// CORRECTION : Fonction async avec await sur params
 export default async function EtiquettePage({ params }: PageProps) {
-  const { etiquetteId } = params
+  // CORRECTION : Attendre la résolution des params
+  const { etiquetteId } = await params
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
