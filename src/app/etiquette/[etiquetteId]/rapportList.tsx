@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Rapport {
   id: number;
@@ -58,7 +59,7 @@ export default function RapportList({ etiquetteId }: RapportListProps) {
 
   if (loading) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="bg-white rounded-lg shadow-md p-6 h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
           <p className="mt-2 text-gray-600">Chargement des rapports...</p>
@@ -69,8 +70,15 @@ export default function RapportList({ etiquetteId }: RapportListProps) {
 
   // 🔥 AFFICHAGE DIRECT "AUCUN RAPPORT DISPONIBLE"
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 h-screen justify-center flex items-center">
-      <div className="flex flex-col items-center text-center py-8">
+    <div className="bg-white rounded-lg shadow-md p-6 justify-center flex items-center">
+      <div className="flex flex-col items-center text-center py-8 min-h-screen">
+        <Image
+          src="/kesip.png"
+          alt="logo-KESIP"
+          width={340}
+          height={340}
+          className="mb-32"
+        />
         <svg
           className="w-16 h-16 text-gray-300 mb-4"
           fill="none"
