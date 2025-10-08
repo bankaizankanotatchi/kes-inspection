@@ -102,7 +102,7 @@ export default function RapportList({ etiquetteId }: RapportListProps) {
           Aucun rapport disponible
         </h2>
         <p className="text-gray-500 max-w-md">
-          Il n&apos;y a actuellement aucun rapport disponible pour l&apos;étiquette
+          Il n&apos;y a actuellement aucun rapport disponible pour le moment
         </p>
         <div className="mt-4 text-sm text-gray-400">
           <p>Les rapports seront disponibles prochainement.</p>
